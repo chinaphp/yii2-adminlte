@@ -1,6 +1,8 @@
 Yii2-Adminlte
 ==========
 
+[![Total Downloads](https://poser.pugx.org/funson86/yii2-adminlte/downloads)](https://packagist.org/packages/funson86/yii2-adminlte)
+
 Backend user & password:
 Login: `admin`
 Password: `qwe1234`
