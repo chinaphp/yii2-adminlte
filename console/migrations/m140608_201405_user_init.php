@@ -44,7 +44,7 @@ class m140608_201405_user_init extends Migration
     {
         $time = time();
         $password_hash = Yii::$app->getSecurity()->generatePasswordHash('qwe1234');
-        $auth_key = Yii::$app->getSecurity()->generateRandomKey();
+        $auth_key = Yii::$app->security->generateRandomString();
         return "INSERT INTO {{%user}} (`username`, `email`, `auth_key`, `password_hash`, `password_reset_token`, `role`, `status`, `created_at`, `updated_at`)
                 VALUES ('admin', 'admin@demo.com', '$auth_key', '$password_hash', '', 'admin', 1, $time, $time)";
     }
